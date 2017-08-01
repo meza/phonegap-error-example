@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Test app</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1, user-scalable=no'/>
+    <meta name="apple-mobile-web-app-capable" content="no">
+    <meta http-equiv="Content-Security-Policy" content="
+  default-src * data: gap: https://ssl.gstatic.com 'unsafe-eval';
+  style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;
+  script-src 'self' 'unsafe-inline' 'unsafe-eval' *;
+  connect-src * 'unsafe-inline' 'unsafe-eval' blob: ws: *;
+">
+
+</head>
+<body>
+
+<script>
+    var onDeviceReady = function() {
+        navigator.notification.alert('I run');
+    };
+
+    document.addEventListener('deviceready', onDeviceReady, false);
+</script>
+
+<script src="cordova.js"></script>
+</body>
+</html>

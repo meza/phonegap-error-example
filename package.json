@@ -1,0 +1,12 @@
+{
+  "name": "phonegaptest",
+  "version": "1.0.0",
+  "description": "",
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "phonegap": "*"
+  },
+  "dependencies": {
+  }
+}
